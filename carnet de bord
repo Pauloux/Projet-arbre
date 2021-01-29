@@ -15,9 +15,9 @@ Simplication de la fonction generer() et test pour mettre differentes regles.
 Test de couleur, de menu et d'eppaisseur.
 
 28/01/2021 :
-essaie sur l'épaisseur (mise en place de niveau).
-essai de plusieurs fonctions.
-Les arbres ne sont maintenant plus symétriques comme avant
+essais sur l'épaisseur.
+Fonctions de l'abre 2D(0 à 4 itérations), de la courbe de koch(0 à 5 itérations), du flocon de koch(0 à 4 itérations) faites.
+Les arbres ne sont maintenant plus symétriques comme avant (ajout de la sauvegarde de la direction lorsqu'on rencontre un "[" et restitution de la direction lorsqu'on rencontre un "]")
 
 
 Liens utiles :
