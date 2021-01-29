@@ -1,13 +1,25 @@
 Carnet de bord de Cara Marie et Rousseau Paul sur le projet 1 (arbre de Lindenmayer)
 
-Notation : 
-P = Paul
-M = Marie
-
 
 09/01/2021 :
-P: attribution du projet.
-M : attribution du projet et début de la découvrte du projet.
+attribution du projet et début de la découvrte du projet.
 
 14/01/2021 :
-P : début de la découverte du projet.
+début de la découverte du projet.
+
+21/01/2021 :
+création de la fonction generer() (avec sauvegarde de position) et dessiner() et test d'arbres. 
+
+27/01/2021 :
+Simplication de la fonction generer() et test pour mettre differentes regles.
+Test de couleur, de menu et d'eppaisseur.
+
+28/01/2021 :
+essaie sur l'épaisseur (mise en place de niveau).
+essai de plusieurs fonctions.
+Les arbres ne sont maintenant plus symétriques comme avant
+
+
+Liens utiles :
+http://paulbourke.net/fractals/lsys/
+https://www.mathweb.fr/euclide/2019/03/19/python-turtle-et-un-arbre/

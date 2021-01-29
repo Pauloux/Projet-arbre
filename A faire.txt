@@ -1,0 +1,36 @@
+A faire :
+
+- Menu pour choisir. "Testé"
+
+- Mettre des couleurs "Testé"
+
+- Faire des branches de plus en plus petites "Testé"
+
+- Diviser les turtles pour aller plus vite.
+
+- Courbe de Koch. "Testé"
+axiom de départ : F
+angle : 90
+regle : F -> F+F-F-F+F
+
+- Arbre 2D standard (+ flocon, labyrinthe). "Testé"
+Flocon :
+  axiom de départ : F++F++F
+  angle : 60
+  regle : f-> F-F++F-F
+
+labyrinthe:
+  axiom de départ :-YF
+  angle : 90
+  regle : 
+X -> XFX-YF-YF+FX+FX-YF-YFFX+YF+FXFXYF-FX+YF+FXFX+YF-FXYF-YF-FX+FX+YFYF-
+Y -> +FXFX-YF-YF+FX+FXYF+FX-YFYF-FX-YF+FXYFYF-FX-YFFX+FX+YF-YF+FX+FX+YFY
+
+
+- Arbre 3D.
+
+- Arbre avec conditions.
+
+Fait :
+
+- Modifier la fonction qui génère la chaine de caractère pour n'en avoir plus qu'une au lieu de deux.
