@@ -19,7 +19,11 @@ essais sur l'épaisseur.
 Fonctions de l'abre 2D(0 à 4 itérations), de la courbe de koch(0 à 5 itérations), du flocon de koch(0 à 4 itérations) faites.
 Les arbres ne sont maintenant plus symétriques comme avant (ajout de la sauvegarde de la direction lorsqu'on rencontre un "[" et restitution de la direction lorsqu'on rencontre un "]")
 
+diviser les tortues ne sert à rien, elles fonctionnent l'une après l'autre pas en simultanée comme voulu
+
 
 Liens utiles :
 http://paulbourke.net/fractals/lsys/
 https://www.mathweb.fr/euclide/2019/03/19/python-turtle-et-un-arbre/
+https://www.bioquest.org/products/files/13157_Real-time%203D%20Plant%20Structure%20Modeling%20by%20L-System.pdf
+https://www.jcourtois.fr/uploads/report/Rapport_Grammaire_L_System.pdf

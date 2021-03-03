@@ -1,7 +1,9 @@
+#On importe la librairie turtle
 from turtle import *
 
 #Paramètres généraux
-hideturtle()
+#hideturtle()
+#On met la vitesse maximale pour la tortue
 speed(0)
 
 def generer(nombre_iteration):
@@ -44,9 +46,9 @@ def flocon_de_koch (nombre_iteration):
   regle = ["F", "F-F++F-F"]
   #Generer la chaine
   for i in range(nombre_iteration):
-    avant = avant * 0.4
-    epaisseur = epaisseur * 0.7
-    decalage = decalage * 1.05
+    avant = avant * 0.37
+    epaisseur = epaisseur * 0.6
+    decalage = decalage * 1.02
     nouvelle_chaine = ""
     for caractere in chaine_actuelle:
       if caractere == regle[0]:
@@ -57,6 +59,7 @@ def flocon_de_koch (nombre_iteration):
   #Initialisation de la tortue
   up()
   goto(-decalage, decalage)
+  setheading(0)
   down()
   width(epaisseur)
   #Dessiner
@@ -90,12 +93,16 @@ def arbre_2D (nombre_iteration):
   #Initialisation de la tortue
   up()
   goto(0, -200)
-  left(90)
+  setheading(90)
   down()
   #Dessiner
   facteur = 1
   for caractere in chaine_actuelle:
     width(epaisseur * facteur)
+    if facteur > 0.8:
+      color("brown")
+    else:
+      color("green")
     if caractere == "F":
       forward(avant*facteur)
     elif caractere == "+":
@@ -112,6 +119,7 @@ def arbre_2D (nombre_iteration):
       setheading(etat[1])
       down()
       facteur = facteur / 0.9
+
 
 def courbe_de_koch (nombre_iteration):
   assert type(nombre_iteration) == int and nombre_iteration >= 0 and nombre_iteration <= 5
@@ -136,7 +144,7 @@ def courbe_de_koch (nombre_iteration):
   #Initialisation de la tortue
   up()
   goto(decalage, -decalage)
-  right(180)
+  setheading(180)
   down()
   width(epaisseur)
   #Dessiner

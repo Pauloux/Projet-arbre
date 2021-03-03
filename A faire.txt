@@ -6,30 +6,69 @@ A faire :
 
 - Faire des branches de plus en plus petites "Testé"
 
-- Diviser les turtles pour aller plus vite.
+- Diviser les turtles pour aller plus vite. "Testé"
 
 - Courbe de Koch. "Testé"
-axiom de départ : F
-angle : 90
-regle : F -> F+F-F-F+F
+  axiom de départ : F
+  angle : 90
+  regle : F -> F+F-F-F+F
 
-- Arbre 2D standard (+ flocon, labyrinthe). "Testé"
-Flocon :
+- Arbre 2D standard. "Testé"
+  axiom de départ = F
+  angle : 22.5
+  regle : F -> FF+[+F-F-F]-[-F+F+F]
+
+- flocon de koch. "Testé"
   axiom de départ : F++F++F
   angle : 60
-  regle : f-> F-F++F-F
-
-labyrinthe:
-  axiom de départ :-YF
-  angle : 90
-  regle : 
-X -> XFX-YF-YF+FX+FX-YF-YFFX+YF+FXFXYF-FX+YF+FXFX+YF-FXYF-YF-FX+FX+YFYF-
-Y -> +FXFX-YF-YF+FX+FXYF+FX-YFYF-FX-YF+FXYFYF-FX-YFFX+FX+YF-YF+FX+FX+YFY
-
+  regle : F-> F-F++F-F
 
 - Arbre 3D.
+  axiom de départ : F
+  angle : 48,40,40,40 ?
+  regles :F->Y[++++++MF][-----NF][^^^^^OF][&&&&&PF]   
+          M->Z-M            
+          N->Z+N            
+          O->Z&O           
+          P->Z^P            
+          Y->Z-ZY+            
+          Z->ZZ
+
+regle=[["F","Y[++++++MF][-----NF][^^^^^OF][&&&&&PF]"], ["M", "Z-M"], ["N", "Z+N"], ["O", "Z&O"], ["P", "Z^P"], ["Y", "Z-ZY+"], ["Z", "ZZ"]]
+
+
+
+- Algue.
+  axiom de départ : aF
+  angle : 12
+  regles :a -> FFFFv[+++h][---q]fb
+          b -> FFFFFv[+++h][---q]fc
+          c -> FFFFFv[+++fa]fd
+          d -> FFFFFv[+++h][---q]fe
+          e -> FFFFFv[+++h][---q]fg
+          g -> FFFFFv[---fa]fa
+          h -> ifFF
+          i -> fFFF[--m]
+          j -> fFFF[--n]
+          k -> fFFF[--o]l
+          l -> fFFF[--p]
+          m -> fFn
+          n -> fFo
+          o -> fFp
+          p -> fF
+          q -> rfF
+          r -> fFFF[++m]s
+          s -> fFFF[++n]t
+          t -> fFFF[++o]u
+          u -> fFFF[++p]
+          v -> Fv
+
+[["a","FFFFv[+++h][---q]fb"], ["b", "FFFFFv[+++h][---q]fc"], ["c", "FFFFFv[+++fa]fd"], ["d", "FFFFFv[+++h][---q]fe"], ["e", "FFFFFv[+++h][---q]fg"], ["g", "FFFFFv[---fa]fa"], ["h", "ifFF"], ["i", "fFFF[--m]"], ["j", "fFFF[--n]"], ["k", "fFFF[--o]l"], ["l", "fFFF[--p]"], ["m", "fFn"], ["n", "fFo"], ["o", "fFp"], ["p", "fF"], ["q", "rfF"], ["r", "fFFF[++m]s"], ["s", "fFFF[++n]t"], ["t", "fFFF[++o]u"], ["u", "fFFF[++p]"], ["v", "Fv"]]
+
 
 - Arbre avec conditions.
+
+- Arbre avec de l'aléatoire
 
 Fait :
 
